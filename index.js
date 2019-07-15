@@ -29,10 +29,17 @@ var getRandomElement = function(ary) {
 }
 
 
+var map = function(v, a, b, c, d) {
+    let p = (v - a) / ( b - a);
+    return c + (d - c) * p;
+}
+
+
 var randomUtils = {
     random,
     randomFloor,
     randomGaussian,
+    map,
     getRandomElement
 }
 
